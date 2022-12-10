@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marek's contact details</title>
+</head>
+<body>
+    <h3>Contact me by:</h3>
+    <ol>
+        <li>phone</li>
+        <li>email</li>
+        <li>skype</li>
+    </ol>
+
+    <table border="1">
+        <thead>
+            <th>Contact type</th>
+            <th>Contact details</th>
+            <th>Contact form</th>
+        </thead>
+        <body>
+            <tr>
+                <td>phone</td>
+                <td>12345</td>
+                <td rowspan="2">
+                    <form action="mailto:me@gmail.com" method="post" enctype="text/plain">
+                        <label for="">your name</label>
+                        <input type="text" name="Client Name" id=""><br>
+                        <label for="">email address</label>
+                        <input type="email" name="client email" id=""><br>
+                        <label for="">message</label>
+                        <textarea name="client message" id="" cols="30" rows="3"></textarea><br>
+                        <input type="submit" value="wyślij wiadomość">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>someEmail@gmail.com</td>
+            </tr>
+        </body>
+    </table>
+</body>
+</html>
