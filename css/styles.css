@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(202, 226, 226);
+}
+hr{
+    border-style: dotted none none none;
+    border-width: 6px;
+    border-color: grey;
+    width: 100%;
+}
+h1{
+    color: #66BFBF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: 4px 4px 3px lightgoldenrodyellow;
+}
+h3{
+    color: #66BFBF;
+}
