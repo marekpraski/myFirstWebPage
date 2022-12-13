@@ -4,17 +4,36 @@ h1{
     font-size: x-large;
     color: rgb(159, 184, 90);
 }
-/*
-img{
-    background-color: rgb(240, 101, 177);
-}
-*/
 
-/*  class selectors, bardzo ukierunkowane, stosuje się do określonej klasy  */
+
+/*  class selectors, bardzo ukierunkowane, stosuje się do określonej klasy  
+może być więcej niż jeden obiekt danej klasy, jeden obiekt można przypisać do więcej niż jednej klasy
+*/
 
 .bacon{
     background-color: aqua;
 }
 .broccoli{
     background-color: brown;
+}
+.isRounded{
+    border-radius: 10%;
+}
+
+.isRound{
+    border-radius: 100%;
+}
+
+/*  id selectors, bardzo ukierunkowane, stosuje się do określonej klasy  
+unikalny, tylko jeden w całym pliku html, tylko jedno Id dla jednego obiektu
+*/
+#headerOne{
+    color: blueviolet;
+}
+
+/*
+pseudo-class
+*/
+img:hover{
+    background-color: rgb(240, 101, 177);
 }
