@@ -1,18 +1,20 @@
-body{
-    background-color: rgb(202, 226, 226);
-}
-hr{
-    border-style: dotted none none none;
-    border-width: 6px;
-    border-color: grey;
-    width: 100%;
-}
+
+/* tag selectors, stosuje się do wszystkich tagów danego typu */
 h1{
-    color: #66BFBF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    text-shadow: 4px 4px 3px lightgoldenrodyellow;
+    font-size: x-large;
+    color: rgb(159, 184, 90);
 }
-h3{
-    color: #66BFBF;
+/*
+img{
+    background-color: rgb(240, 101, 177);
+}
+*/
+
+/*  class selectors, bardzo ukierunkowane, stosuje się do określonej klasy  */
+
+.bacon{
+    background-color: aqua;
+}
+.broccoli{
+    background-color: brown;
 }
