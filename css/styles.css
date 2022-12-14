@@ -1,18 +1,28 @@
 body{
-    background-color: rgb(202, 226, 226);
-}
-hr{
-    border-style: dotted none none none;
-    border-width: 6px;
-    border-color: grey;
-    width: 100%;
+    margin: 0;
 }
 h1{
-    color: #66BFBF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    text-shadow: 4px 4px 3px lightgoldenrodyellow;
+    margin-top: 0;
 }
-h3{
-    color: #66BFBF;
+div{
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+    margin: 0;
+}
+.top-container{
+
+    background-color: rgb(202, 226, 226);
+    padding: 20px;
+}
+.middle-container{
+
+    background-color: red;
+    border-width: 20px;
+    margin-left: 260px;
+}
+.bottom-container{
+
+    background-color: blue;
+    margin-left: 500px;
 }
