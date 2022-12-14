@@ -1,47 +1,31 @@
 body{
     margin: 0;
-    background-color: antiquewhite;
+    text-align: center;
 }
-div{
-    position: absolute;
-}
+
 h1{
     margin: 0;
 }
-
-.outsideContainer{
-    background-color: aqua;
-    width: 300px;
-    height: 300px;
+p{
+    margin: 0;
+}
+div{
+    margin: 0;
 }
 
-.top-container{
-    background-color: red;
-    right: 20px;
-
-    width: 100px;
-    height: 100px;
+.rightCloud{
+    position: absolute;
+    top: 40px;
+    right: 250px;
+}
+.leftCloud{
+    position: absolute;
+    top: 150px;
+    left: 200px;
 }
 
-.middle-container{
-    background-color: blue;
-    left: 100px;
-    top: 400px;
-
-    width: 100px;
-    height: 100px;
-}
-
-.bottom-container{
-    background-color: yellow;
-    top: 240px;
-    width: 100px;
-    height: 100px;
-}
-.scrollableContainer{
-    background-color: blueviolet;
-    margin-left: 400px;
-    position: fixed;
-    height: 100px;
-    width: 100px;
+.topContainer{
+    padding-top: 100px;
+    background-color: rgb(211, 241, 241);
+    position: relative;
 }
