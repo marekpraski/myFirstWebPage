@@ -5,10 +5,16 @@ body{
 }
 
 h1{
-    margin: 0;
+    font-size: 8rem;
+    line-height: normal;
+    color: #11999E;
+    margin-top: 100px;
     font-family: 'Sacramento', cursive;
 }
-p{
+h2{
+    color:blueviolet;
+    font-weight: normal;
+    font-size: 2.5rem;
     font-family: 'Inter', sans-serif;
 }
 p{
@@ -33,4 +39,8 @@ div{
     padding-top: 100px;
     background-color: rgb(211, 241, 241);
     position: relative;
+}
+.skill-row{
+    display: inline-block;
+    width: 50%;
 }
