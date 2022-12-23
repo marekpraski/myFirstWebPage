@@ -5,6 +5,6 @@ for(var i = 0; btns.length; i++){
 }
 
 function onClick(){
-    console.log(this);
-    alert(this);
+    var txt = this.innerText;
+    document.querySelector("." + txt).classList.add("clicked");
 }
