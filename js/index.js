@@ -8,10 +8,14 @@ var keyJ = new Key("sounds/crash.mp3");
 var keyK = new Key("sounds/kick-bass.mp3");
 var keyL = new Key("sounds/snare.mp3");
 
-document.addEventListener("keydown", function(eventArgs) {playMe(eventArgs.key);});
+document.addEventListener("keydown", onKeyPressed);
 
 for(var i = 0; i < btns.length; i++){
     btns[i].addEventListener("click", onClick);
+}
+
+function onKeyPressed(eventArgs){
+    playMe(eventArgs.key);
 }
 
 function Key (music){
