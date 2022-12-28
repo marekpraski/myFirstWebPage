@@ -1,3 +1,4 @@
+
 var btns = document.querySelectorAll(".drum");
 var keyW = new Key("sounds/tom-1.mp3");
 var keyA = new Key("sounds/tom-2.mp3");
@@ -7,9 +8,13 @@ var keyJ = new Key("sounds/crash.mp3");
 var keyK = new Key("sounds/kick-bass.mp3");
 var keyL = new Key("sounds/snare.mp3");
 
-for(var i = 0; btns.length; i++){
+document.addEventListener("keydown", function onKeyPressed(eventArgs) {playMe(eventArgs.key)});
+
+for(var i = 0; i < btns.length; i++){
     btns[i].addEventListener("click", onClick);
 }
+
+
 
 function Key (music){
     this.music = music;
@@ -20,8 +25,11 @@ function Key (music){
 }
 
 function onClick(){
-    var t = this.innerText;
-    switch (t) {
+    playMe(this.innerText);
+}
+
+function playMe(code){
+    switch (code) {
         case "w":
             keyW.play();
             break;
@@ -45,3 +53,4 @@ function onClick(){
             break;
     }
 }
+
