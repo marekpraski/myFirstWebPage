@@ -1,16 +1,24 @@
 var gamePattern = [];
+var userClickedPattern = [];
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var randomNumber = nextSequence();
 var randomChosenColour = buttonColours[randomNumber];
 gamePattern.push(randomChosenColour);
-var currentButton = document.querySelector("." + randomChosenColour);
+var randomChosenButton = document.querySelector("." + randomChosenColour);
 
 var allButtons = document.querySelectorAll(".btn");
 
 for(var i = 0; i < allButtons.length; i++){
     allButtons[i].addEventListener("click", whenClicked);
 }
+
+document.addEventListener("keydown", whenKeyPressed);
+
+function whenKeyPressed(){
+    flashButton(randomChosenButton);
+}
+
 
 function nextSequence(){
     return Math.floor(Math.random() * 3) + 1;
@@ -27,6 +35,8 @@ function playSound(button){
 }
 
 function whenClicked(){
-    flashButton(currentButton);
-    playSound(randomChosenColour);
+    var btnClicked = this.id;
+    userClickedPattern.push(btnClicked);
+    playSound(btnClicked);
+    flashButton(this);
 }
